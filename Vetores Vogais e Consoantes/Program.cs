@@ -6,7 +6,7 @@ char[] vogais = new char[10];
 char[] consoantes = new char[10];
 char[] letras = new char[10];
 char letra;
-int contador_letras = 1, contator_vogais = 0, contador_consoantes = 0;
+int contador_letras = 1, contador_vogais = 0, contador_consoantes = 0;
 
 for (int i = 0; i < 10; i++)
 {
@@ -22,43 +22,43 @@ for (int x = 0; x < 10; x++)
     {
         case 'a':
             vogais[x] = letras[x];
-            contator_vogais += 1;
+            contador_vogais += 1;
             break;
         case 'A':
             vogais[x] = letras[x];
-            contator_vogais += 1;
+            contador_vogais += 1;
             break;
         case 'e':
             vogais[x] = letras[x];
-            contator_vogais += 1;
+            contador_vogais += 1;
             break;
         case 'E':
             vogais[x] = letras[x];
-            contator_vogais += 1;
+            contador_vogais += 1;
             break;
         case 'i':
             vogais[x] = letras[x];
-            contator_vogais += 1;
+            contador_vogais += 1;
             break;
         case 'I':
             vogais[x] = letras[x];
-            contator_vogais += 1;
+            contador_vogais += 1;
             break;
         case 'o':
             vogais[x] = letras[x];
-            contator_vogais += 1;
+            contador_vogais += 1;
             break;
         case 'O':
             vogais[x] = letras[x];
-            contator_vogais += 1;
+            contador_vogais += 1;
             break;
         case 'u':
             vogais[x] = letras[x];
-            contator_vogais += 1;
+            contador_vogais += 1;
             break;
         case 'U':
             vogais[x] = letras[x];
-            contator_vogais += 1;
+            contador_vogais += 1;
             break;
         default:
             consoantes[x] = letras[x];
@@ -66,9 +66,11 @@ for (int x = 0; x < 10; x++)
             break;
     }
 }
+Console.WriteLine($"\n{contador_vogais}");
+Console.WriteLine(contador_consoantes);
 
 Console.WriteLine("\nVogais: ");
-for (int y = contator_vogais; y >= 0; y--)
+for (int y = contador_vogais; y >= 0; y--)
 {
     Console.WriteLine(vogais[y]);
 }
