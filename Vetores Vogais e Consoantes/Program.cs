@@ -76,5 +76,5 @@ for (int y = contator_vogais; y >= 0; y--)
 Console.WriteLine("\nConsoantes: ");
 for (int z = contador_consoantes; z >= 0; z--)
 {
-    Console.WriteLine(vogais[z]);
+    Console.WriteLine(consoantes[z]);
 }
