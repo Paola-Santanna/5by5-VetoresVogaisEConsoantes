@@ -22,47 +22,47 @@ for (int x = 0; x < 10; x++)
     {
         case 'a':
             vogais[x] = letras[x];
-            contator_vogais++;
+            contator_vogais += 1;
             break;
         case 'A':
             vogais[x] = letras[x];
-            contator_vogais++;
+            contator_vogais += 1;
             break;
         case 'e':
             vogais[x] = letras[x];
-            contator_vogais++;
+            contator_vogais += 1;
             break;
         case 'E':
             vogais[x] = letras[x];
-            contator_vogais++;
+            contator_vogais += 1;
             break;
         case 'i':
             vogais[x] = letras[x];
-            contator_vogais++;
+            contator_vogais += 1;
             break;
         case 'I':
             vogais[x] = letras[x];
-            contator_vogais++;
+            contator_vogais += 1;
             break;
         case 'o':
             vogais[x] = letras[x];
-            contator_vogais++;
+            contator_vogais += 1;
             break;
         case 'O':
             vogais[x] = letras[x];
-            contator_vogais++;
+            contator_vogais += 1;
             break;
         case 'u':
             vogais[x] = letras[x];
-            contator_vogais++;
+            contator_vogais += 1;
             break;
         case 'U':
             vogais[x] = letras[x];
-            contator_vogais++;
+            contator_vogais += 1;
             break;
         default:
             consoantes[x] = letras[x];
-            contador_consoantes++;
+            contador_consoantes += 1;
             break;
     }
 }
