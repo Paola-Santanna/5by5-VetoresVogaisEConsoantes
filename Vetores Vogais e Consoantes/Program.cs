@@ -6,14 +6,14 @@ char[] vogais = new char[10];
 char[] consoantes = new char[10];
 char[] letras = new char[10];
 char letra;
-int contador = 1;
+int contador_letras = 1, contator_vogais = 0, contador_consoantes = 0;
 
 for (int i = 0; i < 10; i++)
 {
-    Console.Write($"{contador}º letra: ");
+    Console.Write($"{contador_letras}º letra: ");
     letra = char.Parse(Console.ReadLine());
     letras[i] = letra;
-    contador++;
+    contador_letras++;
 }
 
 for (int x = 0; x < 10; x++)
@@ -22,48 +22,59 @@ for (int x = 0; x < 10; x++)
     {
         case 'a':
             vogais[x] = letras[x];
+            contator_vogais++;
             break;
         case 'A':
             vogais[x] = letras[x];
+            contator_vogais++;
             break;
         case 'e':
             vogais[x] = letras[x];
+            contator_vogais++;
             break;
         case 'E':
             vogais[x] = letras[x];
+            contator_vogais++;
             break;
         case 'i':
             vogais[x] = letras[x];
+            contator_vogais++;
             break;
         case 'I':
             vogais[x] = letras[x];
+            contator_vogais++;
             break;
         case 'o':
             vogais[x] = letras[x];
+            contator_vogais++;
             break;
         case 'O':
             vogais[x] = letras[x];
+            contator_vogais++;
             break;
         case 'u':
             vogais[x] = letras[x];
+            contator_vogais++;
             break;
         case 'U':
             vogais[x] = letras[x];
+            contator_vogais++;
             break;
         default:
             consoantes[x] = letras[x];
+            contador_consoantes++;
             break;
     }
 }
 
 Console.WriteLine("\nVogais: ");
-for (int y = 0; y <= 10; y++)
+for (int y = contator_vogais; y >= 0; y--)
 {
     Console.WriteLine(vogais[y]);
 }
 
 Console.WriteLine("\nConsoantes: ");
-for (int z = 0; z <= 10; z++)
+for (int z = contador_consoantes; z >= 0; z--)
 {
     Console.WriteLine(vogais[z]);
 }
